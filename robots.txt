@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://strov-alk.github.io/hossana-schools/sitemap.xml
