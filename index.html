@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Hossana Secondary School</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #222;
+        background: #f5f7fa;
+    }
+
+    /* Navigation */
+    header {
+        background: #063970;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .navbar {
+        max-width: 1200px;
+        margin: auto;
+        padding: 18px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .nav-links a:hover {
+        color: #ffd700;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+
+        background:
+            linear-gradient(rgba(0, 40, 90, 0.75), rgba(0, 40, 90, 0.75)),
+            url("https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=80");
+
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .hero-content p {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        display: inline-block;
+        background: #ffd700;
+        color: #063970;
+        padding: 13px 25px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .button:hover {
+        background: white;
+    }
+
+    /* Sections */
+    .section {
+        max-width: 1200px;
+        margin: auto;
+        padding: 80px 25px;
+        text-align: center;
+    }
+
+    .section h2 {
+        color: #063970;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .section > p {
+        max-width: 800px;
+        margin: 0 auto 40px;
+    }
+
+    .academic-section {
+        background: #eaf2f8;
+        max-width: none;
+    }
+
+    /* Cards */
+    .cards {
+        max-width: 1100px;
+        margin: 35px auto 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 25px;
+    }
+
+    .card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+        color: #063970;
+        margin-bottom: 12px;
+    }
+
+    /* Contact */
+    .contact {
+        background: white;
+        max-width: none;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 30px auto 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    textarea {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    button {
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        background: #063970;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #0b5ca8;
+    }
+
+    /* Footer */
+    footer {
+        background: #021f3f;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .nav-links {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .hero-content h1 {
+            font-size: 35px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<!-- Navigation -->
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            Hossana Secondary School
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<!-- Home -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <h1>Welcome to Hossana Secondary School</h1>
+
+        <p>
+            Knowledge • Discipline • Excellence
+        </p>
+
+        <a href="#about" class="button">
+            Learn More
+        </a>
+
+    </div>
+
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+
+    <h2>About Our School</h2>
+
+    <p>
+        Hossana Secondary School is dedicated to providing quality
+        education and helping students develop academically, socially
+        and personally. We encourage discipline, creativity,
+        teamwork and hard work.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Our Vision</h3>
+            <p>
+                To develop responsible and successful learners who
+                contribute positively to society.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Our Mission</h3>
+            <p>
+                To provide quality education in a safe, supportive
+                and inspiring environment.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Our Values</h3>
+            <p>
+                Discipline, respect, honesty, teamwork and excellence.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Academics -->
+<section id="academics" class="section academic-section">
+
+    <h2>Academics</h2>
+
+    <p>
+        Our school offers a wide range of subjects designed to prepare
+        students for their future studies and careers.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Sciences</h3>
+            <p>
+                Biology, Chemistry and Physics.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Mathematics</h3>
+            <p>
+                Developing problem-solving and logical thinking skills.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Languages</h3>
+            <p>
+                English and other language studies.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Humanities</h3>
+            <p>
+                History, Geography, Economics and related subjects.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Activities -->
+<section id="activities" class="section">
+
+    <h2>School Activities</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>⚽ Sports</h3>
+            <p>
+                Students participate in football, athletics,
+                basketball and other sports.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🎨 Clubs</h3>
+            <p>
+                Students can join clubs that develop creativity,
+                leadership and teamwork.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📚 Library</h3>
+            <p>
+                Our library supports students with books and
+                learning resources.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section contact">
+
+    <h2>Contact Us</h2>
+
+    <p>
+        <strong>Address:</strong> Kampala, Uganda
+    </p>
+
+    <p>
+        <strong>Phone:</strong> +256 700 000 000
+    </p>
+
+    <p>
+        <strong>Email:</strong> info@hossanasecondaryschool.com
+    </p>
+
+    <form id="contactForm">
+
+        <input
+            type="text"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <textarea
+            placeholder="Your Message"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+    <p>
+        &copy; 2026 Hossana Secondary School.
+        All rights reserved.
+    </p>
+
+</footer>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        alert("Thank you! Your message has been received.");
+
+        this.reset();
+
+    });
+</script>
+```
+
+</body>
+</html>
